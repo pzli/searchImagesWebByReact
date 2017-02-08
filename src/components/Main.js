@@ -3,13 +3,16 @@ require('styles/App.css');
 
 import React from 'react';
 import ImagesList from './ImagesList.js'
-
+import Header from "./Header.js"
 
 
 class AppComponent extends React.Component {
   render() {
     return (
-      <ImagesList/>
+    	<div>
+			<Header/>
+        	<ImagesList/>    		
+    	</div>
     );
   }
 }

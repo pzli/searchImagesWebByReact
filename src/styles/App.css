@@ -72,3 +72,9 @@ html { overflow-y: scroll; }
 body {
  font-family: Verdana, sans-serif;
 }
+
+#app{  
+    width: 100%;
+    min-width: 1280px;
+    height: 2000px;
+}

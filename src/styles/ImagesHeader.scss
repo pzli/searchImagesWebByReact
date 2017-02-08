@@ -1,0 +1,140 @@
+header {
+		position: fixed;
+		height: 56px;
+		background-color: #FFF;
+		width: 100%;
+		min-width: 1280px;
+		z-index: 1001;
+
+		.logo {
+			float: left;
+			width: 200px;
+			height: 56px;
+			margin-left: 50px;
+			background: url("../images/yeoman.png") no-repeat left center;
+			background-size: 16% 50%; 
+
+			p {
+				margin-left: 30px;
+                color: #4E3A4F;
+                font: 500 24px "microsoft yahei";
+                line-height: 56px;
+			}
+		}
+
+		ul {
+			float: right;
+			width: 400px;
+			margin-right: 150px;
+			height: 56px;
+			position: relative;
+
+			li {
+				float: left;
+				width: 20%;
+				height: 56px;
+				text-align: center;
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					font: 14px "microsoft yahei";
+					line-height: 56px;
+					color: #888;
+					text-decoration: none;
+					transition:color 0.4s ease-in-out;
+
+					&:hover {
+    					color: #F04C57;
+					}
+				}
+
+				&:nth-of-type(1):hover~.move {
+					left: 0;
+				}
+				&:nth-of-type(2):hover~.move {
+					left: 20%;
+				}
+				&:nth-of-type(3):hover~.move {
+					left: 40%;
+				}
+				&:nth-of-type(4):hover~.move {
+					left: 60%;
+				}
+				&:nth-of-type(5):hover~.move {
+					left: 80%;
+				}
+			}
+
+			.move {
+				position: absolute;
+				border-top: 4px solid #F04C57;
+			    left: 0;
+			    top: 52px;
+
+			    transition: left 0.4s ease-in-out;
+			}
+		}		
+}
+.section-one {
+			.banner {
+				width: 100%;
+				height: 799px;
+				background: url("../images/topbg.jpg") no-repeat top center;
+				padding-top: 56px;
+				background-size: 100% 560px;
+				position: relative;
+
+				.banner-container {
+					text-align: center;
+					margin-top: 70px;
+
+					p {
+						font: 60px "Arial";
+						color: #fff;
+						margin-bottom: 20px;
+						letter-spacing: 3px;
+						margin-bottom: 70px;
+					}
+					input {
+						display: block;
+						margin: 0 auto;
+					    padding: 0 10px;
+					    width: 536px;
+					    height: 34px;
+					    border: 1px solid rgba(255,255,255,.8);
+					    border-radius: 2px;
+					    color: #fff;
+					    background: rgba(0,0,0,.15);
+					    font-family: inherit;
+					    font-size: inherit;
+					    font-weight: inherit;
+					    resize: none;
+					    outline: 0;
+					}
+					span {
+						display: inline-block;
+						width: 300px;
+						height: 52px;
+						margin-top: 50px;
+
+						background-color: #e8504f;
+						color: #fff;
+						font: 30px/1 "Microsoft YaHei";
+    					text-align: center;
+    					padding-top: 17px;
+    					cursor: pointer;
+    					transition: background-color 0.4s ease-in-out; 
+
+    					&:hover {
+							background-color: #E31212;
+
+    					}
+					}
+
+
+
+				}
+			}
+}
