@@ -2,8 +2,8 @@ require('normalize.css/normalize.css');
 require('styles/App.css');
 
 import React from 'react';
-import ImagesList from './ImagesList.js'
-import Header from "./Header.js"
+import ImagesList from './ImagesList.js';
+import Header from './Header.js';
 
 
 class AppComponent extends React.Component {
@@ -11,7 +11,7 @@ class AppComponent extends React.Component {
     return (
     	<div>
 			<Header/>
-        	<ImagesList/>    		
+        	<ImagesList/>
     	</div>
     );
   }
